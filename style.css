@@ -129,30 +129,28 @@ p strong {
 }
 
 .footer-links a {
-    font-size: 1.1rem;
     color: var(--text-primary);
-    text-decoration: none;
-    font-weight: 500;
-    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-smooth);
+    opacity: 0.7; /* Make them slightly muted by default */
 }
 
-/* here we have the minimalist underline hover effect */
+/* Remove the old underline effect completely */
 .footer-links a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: -4px;
-    left: 0;
-    background-color: var(--text-primary);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    display: none;
 }
 
-.footer-links a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+/* Create a smooth opacity and scale effect on hover */
+.footer-links a:hover {
+    opacity: 1;
+    transform: translateY(-3px); /* Lifts the icon up slightly when hovered */
+}
+
+.footer-links svg {
+    width: 28px;
+    height: 28px;
 }
 
 .copyright {
