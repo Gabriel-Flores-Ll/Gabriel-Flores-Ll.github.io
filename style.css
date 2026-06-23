@@ -275,3 +275,76 @@ p strong {
     display: inline-block;
     transition: transform 0.2s ease;
   }
+
+  /* --- Academic Course Grid --- */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.course-card {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.course-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #111111;
+  line-height: 1.4;
+}
+
+.course-prof {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prof-name {
+  font-size: 0.95rem;
+  color: #666666;
+}
+
+.prof-linkedin {
+  color: #888888;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.prof-linkedin:hover {
+  color: #111111;
+  transform: translateY(-2px);
+}
+
+/* --- Network Grid --- */
+.network-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.peer-card {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 4px; /* Un toque muy sutil de modernidad */
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.peer-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.peer-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111111;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}

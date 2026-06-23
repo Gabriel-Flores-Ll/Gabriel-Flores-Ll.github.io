@@ -1,0 +1,23 @@
+- name: "Fundamentos de Programación"
+  professor: "Kelly Vizconde"
+  linkedin: "https://www.linkedin.com/in/kelly-vizconde-la-motta-3a57a4143/"
+
+- name: "Fundamentos Matemáticos"
+  professor: "Fiorella Rendón"
+  linkedin: "https://www.linkedin.com/in/fiorella-mar%C3%ADa-rend%C3%B3n-garc%C3%ADa-7aa9b7374/"
+
+- name: "Introducción a la Computación"
+  professor: "Ernesto Cuadros"
+  linkedin: "https://www.linkedin.com/in/ecuadrosv/"
+
+- name: "Lógica"
+  professor: "Solange Tejada"
+  linkedin: "https://www.linkedin.com/in/solange-tejada/"
+
+- name: "Introducción a la Vida Universitaria"
+  professor: "Pierina Pacheco"
+  linkedin: ""
+
+- name: "Comunicación"
+  professor: "Lourdes Velarde"
+  linkedin: ""

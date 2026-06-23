@@ -1,0 +1,24 @@
+---
+layout: default
+title: Academic Network
+permalink: /network/
+---
+
+    <div class="page-container">
+    <header class="section-hero">
+        <span class="section-taxonomy">05 / DIRECTORY</span>
+        <h1 class="page-main-title">Academic Network</h1>
+        <p class="page-subtitle">A curated directory of peer portfolios and academic colleagues within the UCSP Artificial Intelligence cohort.</p>
+    </header>
+
+    <div class="network-grid">
+        {% for peer in site.data.peers %}
+        <article class="peer-card">
+            <h2 class="peer-name">{{ peer.name }}</h2>
+            <a href="{{ peer.url }}" target="_blank" rel="noopener noreferrer" class="text-action-link">
+            View Portfolio <span class="arrow">→</span>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+    </div>
